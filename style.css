@@ -252,6 +252,12 @@ nav a:hover{
 }
 
 
+/* watch section styles */
+#watch-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
 
 
 /* subscription section styles */
@@ -509,6 +515,14 @@ footer{
     }
 
 
+    /* watch section styles */
+    #watch-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+
+
     /* subscription section styles */
      #newsletter {
         grid-template-columns: 100%;
@@ -638,6 +652,15 @@ footer{
     }
     .deals-container, .deals-container-2 {
         justify-content: center;
+    }
+
+
+
+    /* watch section styles */
+    #watch-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 20px;
     }
 
 
