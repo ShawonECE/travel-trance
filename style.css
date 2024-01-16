@@ -5,9 +5,26 @@ body {
     margin: 16px 0 0 0;
     font-family: 'Mulish', sans-serif;
 }
+section {
+    margin-top: 100px;
+}
 .container {
     margin: 0 7vw;
 }
+.btn-orange {
+    background-color: #FF5400;
+    font-size: 1.25rem;
+    font-weight: 800;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* navbar styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -46,6 +63,47 @@ nav a:hover{
     color: #FF5400;
     display: none;
 }
+
+
+/* banner styles */
+#banner {
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("./Images/Group13.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+#banner-content {
+    width: 80%;
+    padding: 20vh 0;
+}
+#banner-content form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#banner-content input, #banner-content select {
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0;
+    color: #5A5A5D;
+}
+#banner-content input:focus, #banner-content select:focus {
+    outline: none;
+}
+#banner-content button {
+    margin: 20px 0;
+    width: 20%;
+    height: 50px;
+}
+#banner-content form {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
 
 /* text colors */
 .text-orange {
@@ -110,6 +168,12 @@ nav a:hover{
 }
 
 
+/* text-styles */
+.text-center {
+    text-align: center;
+}
+
+
 /* responsive styles */
 @media only screen and (max-width: 992px) {
     .container {
@@ -143,7 +207,22 @@ nav a:hover{
         display: block;
     }
     #open-menu {
-        top: 35%;
+        top: 40%;
+    }
+
+    /* banner responsive styles */
+    #banner-content form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #banner-content input {
+        width: 70%;
+        margin: 20px 0;
+    }
+    #banner-content button {
+        width: 70%;
+        margin: 20px 0;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -178,6 +257,21 @@ nav a:hover{
         display: block;
     }
     #open-menu {
-        top: 35%;
+        top: 40%;
+    }
+
+    /* banner responsive styles */
+    #banner-content form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #banner-content input {
+        width: 80%;
+        margin: 20px 0 20px 0;
+    }
+    #banner-content button {
+        width: 80%;
+        margin: 20px 0 20px 0;
     }
 }
