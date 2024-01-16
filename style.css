@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&family=Poppins&display=swap');
 
 body {
-    margin: 16px 0 0 0;
+    margin: 0px 0 0 0;
     font-family: 'Mulish', sans-serif;
 }
 section {
-    margin-top: 100px;
+    margin-bottom: 80px !important;
 }
 .container {
     margin: 0 7vw;
@@ -14,13 +14,14 @@ section {
 .btn-orange {
     background-color: #FF5400;
     font-size: 1.25rem;
-    font-weight: 800;
+    font-weight: 700;
     border: none;
     color: white;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 12px 30px;
 }
 
 
@@ -105,6 +106,51 @@ nav a:hover{
 }
 
 
+/* tours section styles */
+#tours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#tours img {
+    width: 90%;
+    margin-left: 10%;
+}
+
+
+/* destination section styles */
+#destination img {
+    height: 100%;
+}
+#row-1{
+    height: 300px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+#row-2{
+    height: 290px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+#row-3{
+    height: 300px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.dest-img-container {
+    position: relative;
+}
+.img-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+
 /* text colors */
 .text-orange {
     color: #FF5400;
@@ -179,6 +225,9 @@ nav a:hover{
     .container {
         margin: 0 6vw;
     }
+    section {
+        margin-bottom: 50px !important;
+    }
 
     /* nav bar responsive styles */
     nav ul {
@@ -216,19 +265,59 @@ nav a:hover{
         flex-direction: column;
         justify-content: center;
     }
-    #banner-content input {
+    #banner-content input, #banner-content button, #banner-content select {
         width: 70%;
         margin: 20px 0;
     }
-    #banner-content button {
-        width: 70%;
-        margin: 20px 0;
+    #banner-title {
+        font-size: 3rem;
+    }
+
+    /* tour section styles */
+    #tours {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    #tours img {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+
+    /* destination section styles */
+    #destination img {
+        width: 100%;
+        height: 250px;
+    }
+    #row-1{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    #row-2{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    #row-3{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
     }
 }
 @media only screen and (max-width: 600px) {
     .container {
         margin: 0 4vw;
     }
+    section {
+        margin-bottom: 35px !important;
+    }
 
     /* nav bar responsive styles */
     nav ul {
@@ -266,12 +355,50 @@ nav a:hover{
         flex-direction: column;
         justify-content: center;
     }
-    #banner-content input {
+    #banner-content input, #banner-content button, #banner-content select {
         width: 80%;
         margin: 20px 0 20px 0;
     }
-    #banner-content button {
-        width: 80%;
-        margin: 20px 0 20px 0;
+    #banner-title {
+        font-size: 3rem;
+    }
+
+    /* tour section styles */
+    #tours {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 20px;
+    }
+    #tours img {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    /* destination section styles */
+    #destination img {
+        width: 100%;
+        height: auto;
+    }
+    #row-1{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    #row-2{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    #row-3{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
     }
 }
