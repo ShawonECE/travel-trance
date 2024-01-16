@@ -202,6 +202,58 @@ nav a:hover{
 }
 
 
+/* deals section styles */
+#deals-1 {
+    background-image: url('./Images/Group39.png');
+    background-position: center;
+    background-size: cover;
+}
+#deals-2 {
+    background-image: url('./Images/Group40.png');
+    background-position: center;
+    background-size: cover;
+}
+#deals-3 {
+    background-image: url('./Images/Group39.png');
+    background-position: center;
+    background-size: cover;
+}
+.deals {
+    margin-bottom: 24px;
+    border-radius: 16px;
+    padding: 56px;
+}
+.deals-card {
+    width: 60%;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+.card-top {
+    display: flex;
+}
+.card-top img {
+    margin-right: 10px;
+}
+.card-top p {
+    margin-right: 35px;
+}
+.deals-card {
+    padding: 24px;
+}
+.deals-container {
+    display: flex;
+    justify-content: flex-start;
+}
+.deals-container-2 {
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
 /* subscription section styles */
 #newsletter {
     display: grid;
@@ -448,6 +500,15 @@ footer{
     }
 
 
+    /* deals section styles */
+    .deals-card {
+        width: 100%;
+    }
+    .deals-container, .deals-container-2 {
+        justify-content: center;
+    }
+
+
     /* subscription section styles */
      #newsletter {
         grid-template-columns: 100%;
@@ -568,6 +629,15 @@ footer{
     }
     #card-3-container {
         grid-column: span 1;
+    }
+
+
+    /* deals section styles */
+    .deals-card {
+        width: 100%;
+    }
+    .deals-container, .deals-container-2 {
+        justify-content: center;
     }
 
 
