@@ -151,6 +151,23 @@ nav a:hover{
 }
 
 
+/* featured section styles */
+#featured img {
+    width: 100%;
+    border-radius: 6px;
+}
+.featured-card {
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgba(70, 70, 72, 0.2);
+    border-radius: 16px;
+}
+#featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
 /* why to choose styles */
 #why-choose-grid img {
     width: 50px;
@@ -237,6 +254,7 @@ footer{
 }
 #footer-brand img {
     width: 56px;
+    margin-right: 16px;
 }
 #icons {
     display: flex;
@@ -409,6 +427,12 @@ footer{
     }
 
 
+    /* featured section styles */
+    #featured-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
     /* why to choose styles */
     #why-choose-grid {
         display: grid;
@@ -523,6 +547,12 @@ footer{
         flex-direction: column;
         gap: 10px;
         margin-bottom: 10px;
+    }
+
+
+    /* featured section styles */
+    #featured-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 
