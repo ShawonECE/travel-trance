@@ -232,11 +232,17 @@ nav a:hover{
 }
 .card-top {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.card-top img {
+.card-top-seg {
+    display: flex;
+    align-items: center;
+}
+.card-top-seg img {
     margin-right: 10px;
 }
-.card-top p {
+.card-top-seg p {
     margin-right: 35px;
 }
 .deals-card {
@@ -532,6 +538,12 @@ footer{
         bottom: 60px;
         right: 0px;
     }
+    #save-url {
+        font-size: 1.25rem;
+    }
+    #save-percent {
+        font-size: 1.75rem;
+    }
 }
 @media only screen and (max-width: 600px) {
     .container {
@@ -672,5 +684,11 @@ footer{
     #save {
         bottom: 50px;
         right: 0px;
+    }
+    #save-url {
+        font-size: 1rem;
+    }
+    #save-percent {
+        font-size: 1.5rem;
     }
 }
